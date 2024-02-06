@@ -104,7 +104,7 @@ function(FetchContent_MakeAvailable_With_Message)
     endif()
 
     foreach(NAME ${NAMES})
-		string(TOLOWER ${NAME} NAME_LOWER_CASE)
+        string(TOLOWER ${NAME} NAME_LOWER_CASE)
         set(${NAME_LOWER_CASE}_POPULATED ${${NAME_LOWER_CASE}_POPULATED} PARENT_SCOPE)
         set(${NAME_LOWER_CASE}_SOURCE_DIR ${${NAME_LOWER_CASE}_SOURCE_DIR} PARENT_SCOPE)
         set(${NAME_LOWER_CASE}_BINARY_DIR ${${NAME_LOWER_CASE}_BINARY_DIR} PARENT_SCOPE)
