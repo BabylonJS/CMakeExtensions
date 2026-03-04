@@ -89,7 +89,7 @@ function(npm)
         OUTPUT_VARIABLE NPM_OUTPUT
         ERROR_VARIABLE NPM_ERROR)
     if(NOT ${NPM_RESULT} EQUAL 0)
-        message(FATAL_ERROR "npm command failed: ${NPM_RESULT}\n${NPM_OUTPUT}${NPM_ERROR}")
+        message(FATAL_ERROR "npm command failed: ${NPM_RESULT}\n${NPM_OUTPUT}\n${NPM_ERROR}")
     else()
         if(NPM_OUTPUT)
             message(VERBOSE "${NPM_OUTPUT}")
